@@ -1,0 +1,21 @@
+/* What we do section  */
+
+#what .items .box {
+  display: flex;
+  text-align: left;
+}
+
+#what .items .box i {
+  margin-right: 1.3rem;
+  align-self: center;
+}
+
+/* Contact  */
+
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .map {
+  flex: 2;
+}

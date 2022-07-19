@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* General  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility classes  */
+.text-color {
+  color: #51daac;
+}
+
+.big-text {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.medium-text {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.main-paragraph {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  background-color: #51daac;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #2e9070;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Navigation */
+
+#main-nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1; /* to be on top of everything as we scroll */
+  padding: 0.5rem 0.75rem;
+}
+
+#main-nav .logo {
+  align-self: center;
+}
+
+#main-nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#main-nav ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#main-nav ul li a:hover {
+  background-color: #51daac;
+  border-radius: 5px;
+}
+
+/* Middle  */
+.middle {
+  height: 100vh;
+  background: #333 url("../img/buildings.jpeg") no-repeat center center/cover;
+  color: #fff;
+  position: relative;
+}
+
+.middle .middle-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* What */
+
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .box {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .box i {
+  background-color: #51daac;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Who */
+
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url("../img/team-jpeg.jpeg") no-repeat center center/cover;
+}
+
+#who .who-text {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem;
+}
+
+#who .who-text ul {
+  list-style-type: none;
+}
+
+#who .who-text ul li {
+  border-bottom: 1px dotted #555;
+  padding: 0.5rem 0;
+}
+
+#who .who-text ul li:first-child {
+  margin-top: 0.5rem;
+}
+
+/* Clients */
+
+#clients .items {
+  display: flex;
+  padding: 2rem 0;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Contact  */
+#contact {
+  display: flex;
+}
+
+#contact .contact-form {
+  flex: 1;
+  padding: 2rem;
+  background-color: #51daac;
+  color: #fff;
+}
+
+#contact .map {
+  flex: 1;
+}
+
+#contact .contact-form label {
+  display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  outline: none;
+}
+
+#contact .btn {
+  background-color: #333;
+  width: 100%;
+}
+
+#contact .btn:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* Footer  */
+
+#footer {
+  background-color: #333;
+  color: #fff;
+}
